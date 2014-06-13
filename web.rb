@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-	"Welcome to fun points!"
+	"Welcome to fun points! Login and have fun."
 end
 get '/get_points' do
 	"Here are your points"
