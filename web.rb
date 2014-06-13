@@ -1,9 +1,11 @@
 require 'sinatra'
 
+
 get '/' do
-  @title = 'Upload Video'
-  erb :welcome
+  @title = 'The Video Store'
+  haml :index
 end
+
 get '/get_points' do
 	"Here are your points"
 end
