@@ -9,4 +9,10 @@ gem 'haml', '3.1.7'
 gem 'sass', '3.2.1'
 gem 'shotgun', '0.9'
 gem 'sinatra', '1.3.5'
-gem 'sqlite3', '1.3.7'
+
+group :production do
+  gem 'pg'
+end
+group :development, :test do
+  gem 'sqlite3'
+end
